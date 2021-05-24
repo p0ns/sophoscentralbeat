@@ -8,8 +8,7 @@ RUN apt-get update && \
     git gcc g++ binutils make
 RUN mkdir -p ${GOPATH}/src/github.com/elastic && git clone https://github.com/elastic/beats ${GOPATH}/src/github.com/elastic/beats
 COPY . /go/src/github.com/p0ns/sophoscentralbeat/
-RUN cd /go/src/github.com/forter/sophoscentralbeat && go mod init && go mod tidy 
-
+RUN cd /go/src/github.com/p0ns/sophoscentralbeat && go mod init && go mod tidy 
 RUN make
 RUN chmod +x sophoscentralbeat
 # ---
