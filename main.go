@@ -3,9 +3,9 @@ package main
 import (
 	"os"
 
-	"github.com/forter/sophoscentralbeat/cmd"
+	"github.com/p0ns/sophoscentralbeat/cmd"
 
-	_ "github.com/forter/sophoscentralbeat/include"
+	_ "github.com/p0ns/sophoscentralbeat/include"
 )
 
 func main() {
